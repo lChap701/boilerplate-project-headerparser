@@ -7,9 +7,13 @@
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"express": "^5.0.0-alpha.2",
 		"cors": "^2.8.1",
-		"dotenv": "^8.2.0"
+		"dotenv": "^8.2.0",
+		"express": "^5.0.0-alpha.2",
+		"geoip-lite": "^1.4.2",
+		"ip": "^1.1.5",
+		"ipify2": "^1.1.0",
+		"public-ip": "^4.0.4"
 	},
 	"repository": {
 		"type": "git",

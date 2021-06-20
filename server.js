@@ -25,6 +25,18 @@ app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
 
+/* My code */
+// Corrects the IP Address
+app.listen(process.env.PORT, '0.0.0.0');
+
+app.enable('trust proxy')
+// Displays information about a request
+app.get("/api/whoami", function (req, res) {
+  let lang = req.headers["accept-language"];
+  let sw = req.headers["user-agent"];
+
+  res.json({ ipaddress: req.ip, language: lang, software:  sw});
+});
 
 
 // listen for requests :)
